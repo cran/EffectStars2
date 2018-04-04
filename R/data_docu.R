@@ -2,7 +2,7 @@
 #' Election Data
 #' 
 #' The data set contains data from the German Longitudinal Election Study. The
-#' Response Categories refer to the five dominant parties in Germany. The
+#' response categories refer to the five dominant parties in Germany. The
 #' explanatory variables refer to the declarations of single voters.
 #' 
 #' 
@@ -69,8 +69,12 @@
 #' @keywords datasets multinomial response
 #' @examples
 #' 
-#' data(election)
-#' vignette("election")
+#' data(election) 
+#' library(VGAM)
+#' m_elect <- vglm(Partychoice ~ Gender + West + Age + Union + Highschool + Unemployment
+#' + Pol.Interest + Democracy + Religion, family = multinomial(), data = election)
+#' 
+#' effectstars(m_elect)
 #' 
 NULL
 
@@ -132,7 +136,26 @@ NULL
 #' 
 #' \dontrun{
 #' data(insolvency)
-#' vignette("insolvency")
+#' insolvency$Age <- scale(insolvency$Age)
+#' 
+#' my_formula <- Insolvency ~ Age + Gender
+#' 
+#' m_acat <- vglm(my_formula, data = insolvency,family = acat())
+#' m_cratio <- vglm(my_formula, data = insolvency,family = cratio())
+#' m_sratio <- vglm(my_formula, data = insolvency,family = sratio())
+#' m_cumulative <- vglm(my_formula, data = insolvency,family = cumulative())
+#' 
+#' summary(m_acat)
+#' effectstars(m_acat, p.values = TRUE)
+#' 
+#' summary(m_cratio)
+#' effectstars(m_cratio, p.values = TRUE)
+#' 
+#' summary(m_sratio)
+#' effectstars(m_sratio, p.values = TRUE)
+#' 
+#' summary(m_cumulative)
+#' effectstars(m_cumulative, p.values = TRUE)
 #' }
 #' 
 NULL
@@ -161,16 +184,18 @@ NULL
 #' \item{Age}{(Standardized) Age in years} 
 #' \item{Vote}{Response with levels
 #' \code{Abstention}, \code{No}, \code{Undecided} and \code{Yes}} }
-#' @references Personal communication from FLACSO/Chile. \cr Fox, J. (2008):
+#' @references  Fox, J. (2008):
 #' \emph{Applied Regression Analysis and Generalized Linear Models}, Second
 #' Edition.
-#' @source R package car: \code{\link[car]{Chile}}
+#' @source R package carData: \code{\link[carData]{Chile}}
 #' @keywords datasets multinomial response
 #' @examples
 #' 
 #' \dontrun{
 #' data(plebiscite)
-#' vignette("plebiscite")
+#' m_chile <- vglm(Vote ~ ., family = multinomial(), data = plebiscite)
+#' 
+#' effectstars(m_chile)
 #' }
 #' 
 NULL

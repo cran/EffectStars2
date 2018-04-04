@@ -17,7 +17,7 @@ Santiago City with levels \code{no} and \code{yes}}
 \item{Vote}{Response with levels
 \code{Abstention}, \code{No}, \code{Undecided} and \code{Yes}} }}
 \source{
-R package car: \code{\link[car]{Chile}}
+R package carData: \code{\link[carData]{Chile}}
 }
 \description{
 The data origin from a survey refering to the plebiscite in Chile 1988. The
@@ -29,16 +29,17 @@ elections in 1989 (voting no).
 
 \dontrun{
 data(plebiscite)
-vignette("plebiscite")
+m_chile <- vglm(Vote ~ ., family = multinomial(), data = plebiscite)
+
+effectstars(m_chile)
 }
 
 }
 \references{
-Personal communication from FLACSO/Chile. \cr Fox, J. (2008):
+Fox, J. (2008):
 \emph{Applied Regression Analysis and Generalized Linear Models}, Second
 Edition.
 }
 \keyword{datasets}
 \keyword{multinomial}
 \keyword{response}
-

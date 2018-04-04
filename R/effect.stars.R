@@ -12,7 +12,7 @@ effectstars <- function(x, ...)
 #' @importFrom stats coefficients pnorm terms
 #' @description Plots effect stars for grouped coefficients. Effect stars are applicable if the
 #' parameters of a model are grouped in some sense. For example, the parameters of a multinomial 
-#' logit models are grouped by the covariates, per covariate there is one estimate per response category.
+#' logit models are grouped by the covariates, i.e. per covariate there is one estimate per response category.
 #' But also in many other models, the parameters can have a fixed grouping structure. All estimates have to be positive, 
 #' typically the exponentials of the estimates are plotted. Every effect star comes with a circle of radius 1.
 #' This circle represents the case of no effect, i.e. \code{exp(0)=1}.
@@ -35,8 +35,10 @@ effectstars <- function(x, ...)
 #' @param ... possible further arguments
 #' @seealso \code{\link{star.ctrl}}, \code{\link{effectstars.vglm}}, \code{\link{effectstars.DIFlasso}}, \code{\link{effectstars.DIFboost}}
 #' @author Gunther Schauberger \cr
+#' \email{g.schauberger@tum.de} \cr \cr
 #' \email{gunther@stat.uni-muenchen.de} \cr \cr
-#' \url{http://www.statistik.lmu.de/~schauberger/}
+#' \url{https://www.researchgate.net/profile/Gunther_Schauberger2}\cr \cr
+#' \url{http://www.semsto.statistik.uni-muenchen.de/personen/doktoranden/schauberger/index.html}
 #' 
 #' @references  Tutz, G. and Schauberger, G. (2013): \emph{Visualization of Categorical Response Models -
 #' from Data Glyphs to Parameter Glyphs}, Journal of Computational and Graphical Statistics 22(1), 156--177.

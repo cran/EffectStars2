@@ -51,7 +51,26 @@ represents survival time beyond 36 months.
 
 \dontrun{
 data(insolvency)
-vignette("insolvency")
+insolvency$Age <- scale(insolvency$Age)
+
+my_formula <- Insolvency ~ Age + Gender
+
+m_acat <- vglm(my_formula, data = insolvency,family = acat())
+m_cratio <- vglm(my_formula, data = insolvency,family = cratio())
+m_sratio <- vglm(my_formula, data = insolvency,family = sratio())
+m_cumulative <- vglm(my_formula, data = insolvency,family = cumulative())
+
+summary(m_acat)
+effectstars(m_acat, p.values = TRUE)
+
+summary(m_cratio)
+effectstars(m_cratio, p.values = TRUE)
+
+summary(m_sratio)
+effectstars(m_sratio, p.values = TRUE)
+
+summary(m_cumulative)
+effectstars(m_cumulative, p.values = TRUE)
 }
 
 }
@@ -64,4 +83,3 @@ Unternehmensgruendungen}, Duncker & Humblot.
 \keyword{datasets}
 \keyword{ordinal}
 \keyword{response}
-

@@ -52,17 +52,13 @@ library(VGAM)
 m_elect <- vglm(Partychoice ~ Gender + West + Age + Union + Highschool + Unemployment
 + Pol.Interest + Democracy + Religion, family = multinomial(), data = election)
 
-ctr <- star.ctrl(col.labels = c("black","red2","yellow2","green2","darkred"), col.star = "darkgray",
-col.fill = "lightblue", col.circle = "darkgray", cex.labels = 1.1)
+ctrl <- star.ctrl(col.labels = c("black","red2","yellow2","green2","darkred"), 
+col.star = "darkgray", col.fill = "lightblue", col.circle = "darkgray", 
+cex.labels = 1.1)
 
-effectstars(m_elect, control = ctr)
+effectstars(m_elect, control = ctrl)
 }
 
-}
-\author{
-Gunther Schauberger \cr
-\email{gunther@stat.uni-muenchen.de} \cr \cr
-\url{http://www.statistik.lmu.de/~schauberger/}
 }
 \references{
 Tutz, G. and Schauberger, G. (2013): \emph{Visualization of Categorical Response Models -
@@ -72,4 +68,10 @@ from Data Glyphs to Parameter Glyphs}, Journal of Computational and Graphical St
 \seealso{
 \code{\link{effectstars}}
 }
-
+\author{
+Gunther Schauberger \cr
+\email{g.schauberger@tum.de} \cr \cr
+\email{gunther@stat.uni-muenchen.de} \cr \cr
+\url{https://www.researchgate.net/profile/Gunther_Schauberger2}\cr \cr
+\url{http://www.semsto.statistik.uni-muenchen.de/personen/doktoranden/schauberger/index.html}
+}

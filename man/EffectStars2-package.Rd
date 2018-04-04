@@ -2,19 +2,14 @@
 % Please edit documentation in R/EffectStars2-package.R
 \docType{package}
 \name{EffectStars2-package}
-\alias{EffectStars2}
 \alias{EffectStars2-package}
+\alias{EffectStars2}
 \title{Plot EffectStars}
 \description{
-The package provides functions for the method of EffectStars as proposed by
+The package provides functions for the method of effect stars as proposed by
 Tutz and Schauberger (2013). Beside the main function
 \code{\link{effectstars}} there exist methods for special objects, for
 example for \code{\link[VGAM]{vglm}}-objects.
-}
-\author{
-Gunther Schauberger\cr
-\url{www.stat.uni-muenchen.de\~schauberger}\cr
-\email{gunther@stat.uni-muenchen.de}
 }
 \references{
 Tutz, G. and Schauberger, G. (2013): \emph{Visualization of
@@ -26,5 +21,11 @@ of Computational and Graphical Statistics, 22(1), 156--177
 \code{\link{effectstars.vglm}}, \code{\link{effectstars.DIFlasso}}, 
 \code{\link{effectstars.DIFboost}}
 }
+\author{
+Gunther Schauberger \cr
+\email{g.schauberger@tum.de} \cr \cr
+\email{gunther@stat.uni-muenchen.de} \cr \cr
+\url{https://www.researchgate.net/profile/Gunther_Schauberger2}\cr \cr
+\url{http://www.semsto.statistik.uni-muenchen.de/personen/doktoranden/schauberger/index.html}
+}
 \keyword{package}
-

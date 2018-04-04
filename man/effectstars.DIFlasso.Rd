@@ -36,11 +36,6 @@ effectstars(m1)
 
 }
 }
-\author{
-Gunther Schauberger \cr
-\email{gunther@stat.uni-muenchen.de} \cr \cr
-\url{http://www.statistik.lmu.de/~schauberger/}
-}
 \references{
 Tutz, G. and Schauberger, G. (2015): \emph{A Penalty Approach to Differential Item Functioning in Rasch Models},
 , Psychometrika, 80(1), 21 -- 43\cr \cr
@@ -51,4 +46,10 @@ from Data Glyphs to Parameter Glyphs}, Journal of Computational and Graphical St
 \seealso{
 \code{\link{star.ctrl}},  \code{\link{effectstars}}
 }
-
+\author{
+Gunther Schauberger \cr
+\email{g.schauberger@tum.de} \cr \cr
+\email{gunther@stat.uni-muenchen.de} \cr \cr
+\url{https://www.researchgate.net/profile/Gunther_Schauberger2}\cr \cr
+\url{http://www.semsto.statistik.uni-muenchen.de/personen/doktoranden/schauberger/index.html}
+}

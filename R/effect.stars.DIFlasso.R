@@ -14,8 +14,10 @@
 #' @param ... further arguments for generic function \code{\link{effectstars}}.
 #' @seealso \code{\link{star.ctrl}},  \code{\link{effectstars}}
 #' @author Gunther Schauberger \cr
+#' \email{g.schauberger@tum.de} \cr \cr
 #' \email{gunther@stat.uni-muenchen.de} \cr \cr
-#' \url{http://www.statistik.lmu.de/~schauberger/}
+#' \url{https://www.researchgate.net/profile/Gunther_Schauberger2}\cr \cr
+#' \url{http://www.semsto.statistik.uni-muenchen.de/personen/doktoranden/schauberger/index.html}
 #' 
 #' @references  
 #' Tutz, G. and Schauberger, G. (2015): \emph{A Penalty Approach to Differential Item Functioning in Rasch Models},

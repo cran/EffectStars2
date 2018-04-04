@@ -1,7 +1,7 @@
 
 #' Plot EffectStars
 #' 
-#' The package provides functions for the method of EffectStars as proposed by
+#' The package provides functions for the method of effect stars as proposed by
 #' Tutz and Schauberger (2013). Beside the main function
 #' \code{\link{effectstars}} there exist methods for special objects, for
 #' example for \code{\link[VGAM]{vglm}}-objects.
@@ -10,9 +10,11 @@
 #' @name EffectStars2-package
 #' @aliases EffectStars2-package EffectStars2
 #' @docType package
-#' @author Gunther Schauberger\cr
-#' \url{www.stat.uni-muenchen.de\~schauberger}\cr
-#' \email{gunther@@stat.uni-muenchen.de}
+#' @author Gunther Schauberger \cr
+#' \email{g.schauberger@tum.de} \cr \cr
+#' \email{gunther@stat.uni-muenchen.de} \cr \cr
+#' \url{https://www.researchgate.net/profile/Gunther_Schauberger2}\cr \cr
+#' \url{http://www.semsto.statistik.uni-muenchen.de/personen/doktoranden/schauberger/index.html}
 #' @seealso \code{\link{effectstars}}, \code{\link{star.ctrl}}, 
 #' \code{\link{effectstars.vglm}}, \code{\link{effectstars.DIFlasso}}, 
 #' \code{\link{effectstars.DIFboost}}

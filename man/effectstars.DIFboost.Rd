@@ -36,11 +36,6 @@ effectstars(m1)
 
 }
 }
-\author{
-Gunther Schauberger \cr
-\email{gunther@stat.uni-muenchen.de} \cr \cr
-\url{http://www.statistik.lmu.de/~schauberger/}
-}
 \references{
 Schauberger, G. and Tutz, G. (2016): \emph{Detection of Differential Item Functioning in Rasch Models by Boosting Techniques}, 
 British Journal of Mathematical and Statistical Psychology, 69(1), 80 - 103  \cr \cr
@@ -51,4 +46,10 @@ from Data Glyphs to Parameter Glyphs}, Journal of Computational and Graphical St
 \seealso{
 \code{\link{star.ctrl}},  \code{\link{effectstars}}
 }
-
+\author{
+Gunther Schauberger \cr
+\email{g.schauberger@tum.de} \cr \cr
+\email{gunther@stat.uni-muenchen.de} \cr \cr
+\url{https://www.researchgate.net/profile/Gunther_Schauberger2}\cr \cr
+\url{http://www.semsto.statistik.uni-muenchen.de/personen/doktoranden/schauberger/index.html}
+}

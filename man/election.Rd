@@ -63,13 +63,17 @@ positioning on a political left-right scale between respondent and the Left
 party} }}
 \description{
 The data set contains data from the German Longitudinal Election Study. The
-Response Categories refer to the five dominant parties in Germany. The
+response categories refer to the five dominant parties in Germany. The
 explanatory variables refer to the declarations of single voters.
 }
 \examples{
 
-data(election)
-vignette("election")
+data(election) 
+library(VGAM)
+m_elect <- vglm(Partychoice ~ Gender + West + Age + Union + Highschool + Unemployment
++ Pol.Interest + Democracy + Religion, family = multinomial(), data = election)
+
+effectstars(m_elect)
 
 }
 \references{
@@ -78,4 +82,3 @@ German Longitudinal Election Study (GLES)
 \keyword{datasets}
 \keyword{multinomial}
 \keyword{response}
-
