@@ -26,10 +26,8 @@
 #' @param ... further arguments for generic function \code{\link{effectstars}}.
 #' @seealso \code{\link{effectstars}} \code{\link{effectstars.DIFlasso}}
 #' @author Gunther Schauberger \cr
-#' \email{g.schauberger@tum.de} \cr \cr
-#' \email{gunther@stat.uni-muenchen.de} \cr \cr
-#' \url{https://www.researchgate.net/profile/Gunther_Schauberger2}\cr \cr
-#' \url{http://www.semsto.statistik.uni-muenchen.de/personen/doktoranden/schauberger/index.html}
+#' \email{gunther.schauberger@tum.de} \cr \cr
+#' \url{https://www.sg.tum.de/epidemiologie/team/schauberger/}
 #' 
 #' @references  Tutz, G. and Schauberger, G. (2013): \emph{Visualization of Categorical Response Models -
 #' from Data Glyphs to Parameter Glyphs}, Journal of Computational and Graphical Statistics 22(1), 156--177.
